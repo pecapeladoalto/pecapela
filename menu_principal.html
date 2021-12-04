@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pecapela Web</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo_menu.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#"></a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
-      
-      <h2>Animated Sidenav Example</h2>
-      <p>Click on the element below to open the side navigation menu.</p>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-      
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-      </script>  
+    <header>
+        <h1>PENITENCIÁRIA DE CAPELA DO ALTO</h1>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Documentação</a>
+            <a href="#">Sedex</a>
+            <a href="#">Orientações Visitação</a>
+            <a href="#">Contatos</a>
+            </div>
+        
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    </header>
+
 </body>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>  
 </html>
