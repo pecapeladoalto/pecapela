@@ -1,24 +1,51 @@
 :root {
     --azul-principal: #0D4F9E;
   }
-
+* {
+  padding: 0px;
+  margin: 0px;
+}
 body {
-    font-family: "Lato", sans-serif;
-    background-color: var(--azul-principal);
+    font-family: "segoe ui", sans-serif;
+    background-color: #BEC0DE;
     color: whitesmoke;
   }
   header {
-      background-color: darkblue;
+      background-color: var(--azul-principal);
+      padding-top: 10px;
   }
  header > h1 {
      text-align: center;
+     text-shadow: 3px;
  } 
+ main {
+   margin: auto;
+   max-width: 800px;
+   height: 800px;
+   border-radius: 0px 0px 20px 20px;
+ }
+ .container {
+   margin-top: 100px;
+   display: flex;
+   justify-content:space-between;
+ }
+ .container > div {
+   background-color: var(--azul-principal);
+   width: 150px;
+   height: 150px;
+   border: 1px solid black;
+   border-radius: 20px;
+   color: whitesmoke;
+   font-size: 1.3em;
+   text-align: center;
+   box-shadow: 3px 3px 3px rgba(0, 0, 0, 30%);
+ }
   .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 93;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
