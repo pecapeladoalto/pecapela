@@ -1,7 +1,6 @@
 :root {
     --azul-principal: #0D4F9E;
-    --roxo-claro: #bec0de;
-    font: 1.3em sans-serif;
+    --roxo-claro: rgb(230, 230, 230);
   }
 * {
   padding: 0px;
@@ -16,21 +15,30 @@ body {
       background-color: var(--azul-principal);
       padding-top: 10px;
   }
- header > h2 {
+ header > h3 {
      text-align: center;
      text-shadow: 3px 3px 3px rgba(0, 0, 0, 30%);
  } 
+ header h3 a {
+   text-decoration: none;
+   color: whitesmoke;
+ }
+ header h3 a:hover {
+  text-decoration: underline;
+ }
  main {
    color: black;
    background-color: whitesmoke;
    margin: auto;
    max-width: 800px;
    height: 100%;
-   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 30%);
-   border-radius: 0px 0px 20px 20px;
+   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 20%);
+   border-radius: 0px 0px 10px 10px;
  }
  article {
    padding: 10px;
+   margin: 8px 0px;
+   font-size: 1.1em;
  }
  article > h2 {
     text-align: center;
@@ -48,25 +56,25 @@ body {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 92px;
+    top: 64px;
     left: 0;
     background-color: var(--azul-principal);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 40px;
   }
-  
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
     color: var(--roxo-claro);
     display: block;
     transition: 0.3s;
+    font-size: 1.2em;
   }
   
   .sidenav a:hover {
     color: whitesmoke;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 30%);
   }
   
   .sidenav .closebtn {
