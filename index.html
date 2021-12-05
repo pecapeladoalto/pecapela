@@ -3,39 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pecapela Web</title>
+    <title>Penitenciária de Capela do Alto</title>
     <link rel="stylesheet" href="css/estilo_menu.css">
-    <link rel="shortcut icon" href="imagens/sp.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-      <h1>PENITENCIÁRIA DE CAPELA DO ALTO</h1>
+      <h2>PENITENCIÁRIA DE CAPELA DO ALTO</h2>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
         <a href="#">Documentação</a>
         <a href="#">Sedex</a>
         <a href="#">Orientações Visitação</a>
         <a href="#">Contatos</a>
       </div>        
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+      <span id="spanMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
     </header>
     <main>
-      <div class="container">
-        <div>Documentação</div>
-        <div>Sedex</div>
-        <div>Informações do <br>Dia de Visitas</div>
-        <div>Contatos</div>
-      </div>
+      <article>
+        <h2>Aos Visitantes</h2>
+        <p>Site criado para facilitar a comunicação das informações repassadas desta unidade prisional para com os visitantes dos sentenciados. Por exemplo:</p>
+        <ul>
+          <li>Documentação necessária para permitir a visitação</li>
+          <li>Alimentos permitidos no dia da visita e no envio de sedex</li>
+          <li>Vestimenta correta</li>
+        </ul>
+        <p>Anteriormente postavamos as informações no blog: <strong>penitenciariadecapeladoalto@blogspot.com</strong>, mas com a criação deste site o blog deixará de existir a partir do dia 25/12/2021.</p>
+        <p>Para pesquisar as informações deste site utilize o icone de <strong>&#9776; Menu</strong> à esquerda.</p>
+
+      </article>
     </main>
 
 </body>
 <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("mySidenav").style.top = "92px";
+      document.getElementById("spanMenu").style.visibility = "hidden";
     }
     
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("spanMenu").style.visibility = "visible";
     }
 </script>  
 </html>
