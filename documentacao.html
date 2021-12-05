@@ -5,47 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penitenciária de Capela do Alto</title>
     <link rel="stylesheet" href="css/estilo_menu.css">
-    <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon1.ico" type="image/x-icon">
 </head>
 <body>
     <header>
       <h3><a href="index.html">PENITENCIÁRIA DE CAPELA DO ALTO</a></h3>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="documentacao.html">Documentação</a>
-        <a href="#">Calendário de Visitação</a>
-        <a href="#">Sedex</a>
-        <a href="#">Orientações Visitação</a>
+        <a href="index.html">Página Inicial</a>
+        <a href="documentacao.html">Documentações</a>
+        <a href="#">Calendário de visitação</a>
+        <a href="orientacao.html">Orientações para o dia de visita</a>
+        <a href="#">Sedex</a>        
         <a href="#">Contatos</a>
       </div>        
-      <span id="spanMenu" style="font-size:1.2em;cursor:pointer;margin-left:5px;" onclick="openNav()">&#9776; Menu</span>
+      <div class="menu">
+        <span id="spanMenu" style="cursor: pointer;" onclick="openNav()">&#9776; Menu</span>
+        <span id="spanTel">Tel: (15)3267-8190</span>
+      </div>
     </header>
     <main>
       <article>
         <h2>Documentos necessários para o cadastro no Rol de Visitas</h2>
-        <p>Informamos que antes do cadastro ser realizado o sentenciado deve incluir no rol de visitas dele o familiar que poderá visita-lo e mandar Sedex.</p>
-        <h3>Documentos Necessários:</h3>
+        <p>Lembrando que antes do cadastro ser realizado, o sentenciado deve incluir no rol de visitas o familiar que poderá visita-lo e mandar Sedex.</p>
+        <h3>Pai, Mãe, Irmãos</h3>
         <ul>
           <li>02 fotos 3x4;</li>
           <li>Cópia autenticada do RG;</li>
-          <li>Cópia autenticada do comprovante de endereço</li>
+          <li>Cópia autenticada do comprovante de endereço (declaração autenticada do proprietário se a residência for alugada);</li>
+          <li>Atestado de Antecedentes Criminais;</li>
         </ul>
-
+        <h3>Companheira, Esposa</h3>
+        <ul>
+          <li>02 fotos 3x4;</li>
+          <li>Cópia autenticada do RG;</li>
+          <li>Cópia autenticada do comprovante de endereço (declaração autenticada do proprietário se a residência for alugada);</li>
+          <li>Atestado de Antecedentes Criminais;</li>
+          <li>Certidão de Casamento de União Estável ou Comprovação de Vínculo(ex: Certidão de Nascimento do filho do sentenciado);</li>
+        </ul>
+        <p>Outros casos serão analisados pela Diretoria desta unidade prisional.</p>
       </article>
     </main>
 
 </body>
-<script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("mySidenav").style.top = "68px";
-      document.getElementById("spanMenu").style.visibility = "hidden";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("spanMenu").style.visibility = "visible";
-    }
-</script>  
+<script src="js/script.js"></script> 
 </html>
