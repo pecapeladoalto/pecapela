@@ -1,6 +1,6 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("mySidenav").style.top = "68px";
+    document.getElementById("mySidenav").style.top = "74px";
     document.getElementById("spanMenu").style.visibility = "hidden";
   }
   

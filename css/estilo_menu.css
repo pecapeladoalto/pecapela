@@ -80,7 +80,7 @@ body {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 64px;
+    top: 74px;
     left: 0;
     background-color: var(--azul-principal);
     overflow-x: hidden;
@@ -114,8 +114,8 @@ body {
     .sidenav {padding-top: 15px;}
   }
   @media screen and (max-width: 500px) {
-    header h3 {font-size: 1.170em;}
+    header h3 {font-size: 1.150em;}
     main h2 {font-size: 1.2em;}
-    article h3 {font-size: 1.170em;}
+    article h3 {font-size: 1.150em;}
     article h4 {font-size: 1.1em;}
   }
