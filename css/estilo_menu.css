@@ -115,6 +115,6 @@ body {
   }
   @media screen and (max-width: 500px) {
     header h3 {font-size: 0.95em;}
-    main {font-size: 0.95em;}
-    article {font-size: 0.95em;}
+    main h2 {font-size: 0.95em;}
+    article h3, h4 {font-size: 0.95em;}
   }
