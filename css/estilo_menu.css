@@ -114,8 +114,8 @@ body {
     .sidenav {padding-top: 15px;}
   }
   @media screen and (max-width: 500px) {
-    header h3 {font-size: 1.125em;}
-    main h2 {font-size: 1.150em;}
-    article h3 {font-size: 1.125em;}
+    header h3 {font-size: 1.170em;}
+    main h2 {font-size: 1.2em;}
+    article h3 {font-size: 1.170em;}
     article h4 {font-size: 1.1em;}
   }
