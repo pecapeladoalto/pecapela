@@ -13,12 +13,11 @@ body {
   }
   header {
       background-color: var(--azul-principal);
-      padding-top: 10px;
   }
  header > h3 {
      text-align: center;
      text-shadow: 3px 3px 3px rgba(0, 0, 0, 30%);
-     height: 35px;
+     height: 50px;
  } 
  header h3 a {
    text-decoration: none;
@@ -43,6 +42,9 @@ body {
    font-size: 1.1em;
    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 20%);
    border-radius: 8px 8px 8px 8px;
+ }
+ article p > strong {
+   white-space: normal;
  }
  article .mapa {
    max-width: 600px;
@@ -84,7 +86,7 @@ body {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 74px;
+    top: 80px;
     left: 0;
     background-color: var(--azul-principal);
     overflow-x: hidden;
@@ -117,6 +119,7 @@ body {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
   }
+  
   @media screen and (max-width: 500px) {
     header h3 {font-size: 1.150em;}
     main h2 {font-size: 1.2em;}
