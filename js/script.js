@@ -8,8 +8,3 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("spanMenu").style.visibility = "visible";
 }
-
-var topo = window.scrollY;
-if (topo > 48) {
-  document.getElementById("menu").style.position = "fixed";
-}

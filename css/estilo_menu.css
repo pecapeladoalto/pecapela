@@ -13,6 +13,8 @@ body {
   }
   header {
       background-color: var(--azul-principal);
+      position: sticky;
+      top: 0;
   }
  header > h3 {
      text-align: center;
@@ -43,9 +45,7 @@ body {
    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 20%);
    border-radius: 8px 8px 8px 8px;
  }
- article p > strong {
-   white-space: normal;
- }
+
  article .mapa {
    max-width: 600px;
    display: block;
