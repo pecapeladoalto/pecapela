@@ -25,7 +25,47 @@ header {
 header h3 a {
   text-decoration: none;
   color: whitesmoke;
+  font-variant: small-caps;
 }
+.menu {
+  justify-content: space-between;
+  display: flex;
+}
+#spanMenu, #spanTel {
+  font-size: 1.3em;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+nav {
+  height: 400px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.88);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 35px;
+  border-bottom-right-radius: 8px;
+}
+nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: var(--cinza-claro);
+  display: block;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 1.2em;
+  white-space: nowrap;
+}  
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}  
 main {
   color: black;   
   margin: auto;
@@ -68,51 +108,6 @@ section li{
 section img {
   width: 100%;
   border-radius: 8px;
-}
-.menu {
-  justify-content: space-between;
-  display: flex;
-}
-#spanMenu, #spanTel {
-  font-size: 1.3em;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.88);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 35px;
-}
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  color: var(--roxo-claro);
-  display: block;
-  font-weight: bold;
-  transition: 0.3s;
-  font-size: 1.2em;
-  white-space: nowrap;
-}  
-.sidenav a:hover {
-  color: whitesmoke;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 30%);
-}
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}  
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
 }
 @media screen and (max-width: 500px) {
   header h3 {font-size: 1.150em;}
