@@ -39,16 +39,16 @@ body {
    text-align: center;
    margin: 10px 0px;
  }
- article {
+ section {
    background-color: whitesmoke;
    padding: 10px;
    margin: 12px 0px;
    font-size: 1.1em;
-   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 20%);
+   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 20%);
    border-radius: 8px 8px 8px 8px;
  }
 
- article .mapa {
+ section .mapa {
    max-width: 600px;
    display: block;
    margin: 0 auto;
@@ -58,15 +58,15 @@ body {
    height: 300px;
    border: none;
  }
- article > h2 { 
+ section > h2 { 
     text-align: center;
  }
- article p {
+ section p {
    margin: 20px 0px ;
    text-align: justify;
    text-indent: 30px;
  }
- article li{
+ section li{
    margin-left: 35px;
  }
  section img {
@@ -88,9 +88,9 @@ body {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 80px;
+    top: 0;
     left: 0;
-    background-color: var(--azul-principal);
+    background-color: rgba(0, 0, 0, 0.95);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 35px;
@@ -125,6 +125,6 @@ body {
   @media screen and (max-width: 500px) {
     header h3 {font-size: 1.150em;}
     main h2 {font-size: 1.2em;}
-    article h3 {font-size: 1.150em;}
-    article h4 {font-size: 1.1em;}
+    section h3 {font-size: 1.150em;}
+    section h4 {font-size: 1.1em;}
   }
