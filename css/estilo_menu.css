@@ -1,130 +1,120 @@
 @charset "UTF-8";
-
 :root {
-    --azul-principal: #0D4F9E;
-    --roxo-claro: rgb(230, 230, 230);
-  }
+  --azul-principal: #0D4F9E;
+  --cinza-claro: rgb(230, 230, 230);
+}
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 body {
-    font-family: "segoe ui", sans-serif;
-    background-color: var(--roxo-claro);
-    color: whitesmoke;
-  }
-  header {
-      background-color: var(--azul-principal);
-      position: sticky;
-      top: 0;
-  }
+  font-family: "segoe ui", sans-serif;
+  background-color: var(--cinza-claro);
+  color: whitesmoke;
+}
+header {
+  background-color: var(--azul-principal);
+  position: sticky;
+  top: 0;
+}
  header > h3 {
-     text-align: center;
-     text-shadow: 3px 3px 3px rgba(0, 0, 0, 30%);
-     height: 50px;
- } 
- header h3 a {
-   text-decoration: none;
-   color: whitesmoke;
- }
-
- main {
-   color: black;   
-   margin: auto;
-   max-width: 800px;
-   height: 100%;
-
- }
- main h2 {
-   text-align: center;
-   margin: 10px 0px;
- }
- section {
-   background-color: whitesmoke;
-   padding: 10px;
-   margin: 12px 0px;
-   font-size: 1.1em;
-   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 20%);
-   border-radius: 8px 8px 8px 8px;
- }
-
- section .mapa {
-   max-width: 600px;
-   display: block;
-   margin: 0 auto;
- }
- .iframe-mapa {
-   width: 100%;
-   height: 300px;
-   border: none;
- }
- section > h2 { 
-    text-align: center;
- }
- section p {
-   margin: 20px 0px ;
-   text-align: justify;
-   text-indent: 30px;
- }
- section li{
-   margin-left: 35px;
- }
- section img {
-   width: 100%;
-   border-radius: 8px;
- }
- .menu {
+  text-align: center;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 30%);
+  height: 50px;
+}
+header h3 a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+main {
+  color: black;   
+  margin: auto;
+  max-width: 800px;
+  height: 100%;
+}
+main h2 {
+  text-align: center;
+  margin: 10px 0px;
+}section {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 12px 0px;
+  font-size: 1.1em;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 20%);
+  border-radius: 8px 8px 8px 8px;
+}
+section .mapa {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+.iframe-mapa {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+section > h2 { 
+  text-align: center;
+}
+section p {
+  margin: 20px 0px ;
+  text-align: justify;
+  text-indent: 30px;
+}
+section li{
+  margin-left: 35px;
+}
+section img {
+  width: 100%;
+  border-radius: 8px;
+}
+.menu {
   justify-content: space-between;
   display: flex;
 }
- #spanMenu, #spanTel {
-   font-size: 1.3em;
-   margin-left: 5px;
-   margin-right: 5px;
- }
-
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.88);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 35px;
-  }
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    color: var(--roxo-claro);
-    display: block;
-    transition: 0.3s;
-    font-size: 1.2em;
-    white-space: nowrap;
-  }
-  
-  .sidenav a:hover {
-    color: whitesmoke;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 30%);
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-  }
-  
-  @media screen and (max-width: 500px) {
-    header h3 {font-size: 1.150em;}
-    main h2 {font-size: 1.2em;}
-    section h3 {font-size: 1.150em;}
-    section h4 {font-size: 1.1em;}
-  }
+#spanMenu, #spanTel {
+  font-size: 1.3em;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.88);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 35px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: var(--roxo-claro);
+  display: block;
+  transition: 0.3s;
+  font-size: 1.2em;
+  white-space: nowrap;
+}  
+.sidenav a:hover {
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 30%);
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}  
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+@media screen and (max-width: 500px) {
+  header h3 {font-size: 1.150em;}
+  main h2 {font-size: 1.2em;}
+  section h3 {font-size: 1.150em;}
+  section h4 {font-size: 1.1em;}
+}
