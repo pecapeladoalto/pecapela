@@ -1,7 +1,3 @@
-var myHeaders = new Headers();
-
-myHeaders.append('Content-Type', 'text/xml');
-
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px"
     document.getElementById("mySidenav").style.top = "0"
