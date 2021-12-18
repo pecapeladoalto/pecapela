@@ -36,6 +36,10 @@ header h3 a {
   margin-left: 5px;
   margin-right: 5px;
 }
+#spanTel a {
+  text-decoration: none;
+  color: whitesmoke;
+}
 nav {
   height: 400px;
   width: 0;
