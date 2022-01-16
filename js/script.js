@@ -1,12 +1,11 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px"
-    document.getElementById("mySidenav").style.top = "0"
-    document.getElementById("spanMenu").style.visibility = "hidden"
+    document.querySelector("#mySidenav").classList.add("openNav")
+    document.querySelector("#spanMenu").classList.add("hidespanMenu")
 }
   
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0"
-    document.getElementById("spanMenu").style.visibility = "visible"
+    document.querySelector("#mySidenav").classList.remove("openNav")
+    document.querySelector("#spanMenu").classList.remove("hidespanMenu")
 }
 
 var menu = document.querySelector("#spanMenu")

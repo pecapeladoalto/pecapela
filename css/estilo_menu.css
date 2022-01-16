@@ -12,6 +12,7 @@ body {
   font-family: "segoe ui", sans-serif;
   background-color: var(--cinza-claro);
   color: whitesmoke;
+  font-size: 16px;
 }
 header {
   background-color: var(--azul-principal);
@@ -37,9 +38,15 @@ header h3 a {
   margin-left: 5px;
   margin-right: 5px;
 }
+.hidespanMenu {
+  visibility: hidden;
+}
 #spanTel a {
   text-decoration: none;
   color: whitesmoke;
+}
+.openNav {
+  width: 250px;
 }
 nav {
   height: 400px;
