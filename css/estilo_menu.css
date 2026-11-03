@@ -124,6 +124,16 @@ section img {
   width: 100%;
   border-radius: 8px;
 }
+.conecta-midia {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.conecta-midia > video,
+.conecta-midia > img {
+  width: calc(50% - 8px);
+  height: auto;
+}
 .whatsapp {
   width: 20px;
 }
@@ -166,4 +176,7 @@ section img {
   main h2 {font-size: 1.2em;}
   section h3 {font-size: 1.150em;}
   section h4 {font-size: 1.1em;}
+  .conecta-midia {flex-direction: column;}
+  .conecta-midia > video,
+  .conecta-midia > img {width: 100%;}
 }
