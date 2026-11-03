@@ -1,0 +1,399 @@
+/* =========================================================
+   SISGEP - LAYOUT NOVO
+   Arquivo: /css/layout_novo.css
+   Padrão visual compartilhado pelas páginas modernizadas
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080a0c;
+    color: #202428;
+}
+
+/* Área principal */
+.conteudo-pagina {
+    min-height: calc(100vh - 300px);
+    padding: 32px 15px 55px;
+    background:
+        linear-gradient(
+            180deg,
+            #45494d 0%,
+            #43474d 28%,
+            #6e7275 65%,
+            #c9cccf 100%
+        );
+    background-attachment: fixed;
+}
+
+/* Painéis */
+.painel-conteudo {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 36px 34px 32px;
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, .45);
+    border-radius: 18px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .35);
+}
+
+.painel-links {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 36px 32px 28px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .35);
+}
+
+/* Títulos */
+.pagina-titulo {
+    margin: 0 0 24px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    color: #24292d;
+}
+
+.pagina-titulo::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin: 10px auto 0;
+    background: #b8944f;
+}
+
+.pagina-subtitulo {
+    margin: -12px 0 25px;
+    text-align: center;
+    color: #70757a;
+    font-size: 12px;
+}
+
+.total-registros {
+    margin: -10px 0 24px;
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+}
+
+/* Campos */
+.campo-label {
+    display: block;
+    margin: 0 0 7px;
+    color: #34383c;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.campo-pesquisa,
+.campo-texto,
+.campo-select,
+.mensagem-texto {
+    width: 100%;
+    padding: 0 12px;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.campo-pesquisa,
+.campo-texto,
+.campo-select {
+    height: 42px;
+}
+
+.mensagem-texto {
+    min-height: 145px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    resize: vertical;
+}
+
+.campo-pesquisa:focus,
+.campo-texto:focus,
+.campo-select:focus,
+.mensagem-texto:focus {
+    outline: none;
+    border-color: #b8944f;
+    box-shadow: 0 0 0 2px rgba(184, 148, 79, .15);
+}
+
+/* Botões */
+.acoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    min-width: 145px;
+    height: 41px;
+    padding: 0 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    text-decoration: none;
+}
+
+.botao-principal,
+.botao-gravar,
+.botao-enviar,
+.botao-pesquisar {
+    border: 1px solid #d1b36d;
+    background: linear-gradient(180deg, #d3b66f, #a98443);
+    color: #101317;
+}
+
+.botao-principal:hover,
+.botao-gravar:hover,
+.botao-enviar:hover,
+.botao-pesquisar:hover {
+    background: linear-gradient(180deg, #dfc47f, #b8944f);
+    color: #101317;
+}
+
+.botao-voltar,
+.botao-secundario {
+    border: 1px solid #bbbbbb;
+    background: #f2f2f2;
+    color: #444444;
+}
+
+.botao-voltar:hover,
+.botao-secundario:hover {
+    background: #e8e8e8;
+    color: #333333;
+}
+
+/* Tabelas padronizadas */
+.tabela-resultados {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, .08);
+}
+
+.tabela-resultados th,
+.tabela-resultados .cabecalho-tabela td {
+    padding: 11px 13px;
+    background: #181c20;
+    color: #ffffff;
+    border-bottom: 2px solid #b8944f;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tabela-resultados td {
+    padding: 11px 13px;
+    background: #fafafa;
+    color: #25282b;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.tabela-resultados tbody tr:hover td {
+    background: #f2f0ea;
+}
+
+.tabela-resultados a {
+    color: #30353a;
+    text-decoration: none;
+}
+
+.tabela-resultados a:hover {
+    color: #9a7637;
+    text-decoration: none;
+}
+
+/* Avisos e estados vazios */
+.sem-registros {
+    margin: 28px 0 5px;
+    padding: 14px;
+    text-align: center;
+    color: #7b6436;
+    background: #f7f4ec;
+    border: 1px solid #e3d8bd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Bloco de identificação usado em formulários */
+.identificacao {
+    margin-bottom: 22px;
+    padding: 14px 17px;
+    background: #f5f3ed;
+    border-left: 3px solid #b8944f;
+    border-radius: 4px;
+    color: #34383c;
+}
+
+/* Opções de pesquisa */
+.opcoes-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin: 0 0 22px;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #34383c;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.opcao input {
+    accent-color: #a98443;
+    cursor: pointer;
+}
+
+/* =========================================================
+   Barra de rolagem das páginas - Layout Novo
+   Cinza escuro e discreto
+   ========================================================= */
+
+/* Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #3b3a3a #0b0d0f;
+}
+
+/* Chrome / Edge / Safari */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: #494a4b;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: #222121;
+    border-radius: 10px;
+    border: 1px solid #0b0d0f;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background: #303030;
+}
+
+/* Elementos internos com rolagem própria */
+.scroll-sisgep,
+.tabela-responsiva {
+    scrollbar-width: thin;
+    scrollbar-color: #504e4e #0b0d0f;
+}
+
+.scroll-sisgep::-webkit-scrollbar,
+.tabela-responsiva::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+.scroll-sisgep::-webkit-scrollbar-track,
+.tabela-responsiva::-webkit-scrollbar-track {
+    background: #0b0d0f;
+}
+
+.scroll-sisgep::-webkit-scrollbar-thumb,
+.tabela-responsiva::-webkit-scrollbar-thumb {
+    background: #222121;
+    border-radius: 10px;
+    border: 1px solid #0b0d0f;
+}
+
+.scroll-sisgep::-webkit-scrollbar-thumb:hover,
+.tabela-responsiva::-webkit-scrollbar-thumb:hover {
+    background: #303030;
+}
+
+
+@media (max-width: 800px) {
+    .conteudo-pagina {
+        padding: 22px 8px 40px;
+    }
+
+    .painel-conteudo,
+    .painel-links {
+        padding: 28px 16px;
+    }
+
+    .pagina-titulo {
+        font-size: 23px;
+    }
+
+    .opcoes-pesquisa {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .acoes {
+        flex-direction: column;
+    }
+
+    .botao {
+        width: 100%;
+    }
+
+    .tabela-responsiva {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+/* Integração com o menu geral lateral */
+@media (min-width: 901px) {
+    .conteudo-pagina {
+        min-height: calc(100vh - var(--sisgep-header-height));
+    }
+}
+

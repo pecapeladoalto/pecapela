@@ -20,27 +20,7 @@
     </style>
 </head>
 <body>
-    <header>
-      <h3><a href="index.html">Penitenciária I de Capela do Alto</a></h3> 
-      <div class="menu" id="menu">
-        <span id="spanMenu" style="cursor: pointer;">&#9776; Menu</span>
-        <span id="spanTel"><a href="tel:+551532678190">Tel: (15) 3267-8190</a></span>
-      </div>
-      <nav id="mySidenav">
-        <a href="javascript:void(0)" class="closebtn">&times;</a>
-        <a href="index.html">Página Inicial</a>
-        <a href="documentacao.html">Documentações</a>
-        <a href="calendario.html">Calendário de visitação</a>
-        <a href="orientacao.html">Orientações para o dia <br> de visita</a>
-        <a href="sedex.html">Sedex</a>  
-        <a href="aproximacao.html">Aproximação Familiar</a>
-        <a href="srs.html">Reintegração Social</a>
-        <a href="pix.html">Pix</a> 
-        <a href="peculio.html">Pecúlio</a>     
-        <a href="contatos.html">Contato</a>
-        <a href="https://wa.me/551532678200?text=Menu" target="_blank">WhatsApp</a>
-      </nav> 
-    </header>
+    <div id="header-container"></div>
     <main>
       <section>
         <h2>Aviso aos Visitantes</h2>
@@ -80,22 +60,22 @@
         </section>-->
         <section>
           <img src="imagens/whatsapp-visitas.jpg" alt="Orientações sobre a consulta da valida de da carteirinha">
-          <p><a href="https://wa.me/551532678200?text=Menu" target="_blank" class="link-verde">Clique Aqui para Iniciar</a></p>
+          <p><a href="https://wa.me/551532678200?text=Menu" target="_blank" class="link-destaque">Clique Aqui para Iniciar</a></p>
         </section>
         <section>
           <img src="imagens/whatsapp.jpg" alt="Orientações sobre a busca de sentenciados pelo whatsapp">
-          <p><a href="https://wa.me/551532678200?text=Menu" target="_blank" class="link-verde">Clique Aqui para Iniciar</a></p>
+          <p><a href="https://wa.me/551532678200?text=Menu" target="_blank" class="link-destaque">Clique Aqui para Iniciar</a></p>
         </section>
-        <section>
-          <h3 style="color: red;">Atenção Visitantes!</h3>
-          <p>Os e-mails enviados com os documentos para o Rol de visitas, <strong>PRECISAM OBRIGATÓRIAMENTE</strong> conter o <strong>NOME</strong> e a <strong>MATRÍCULA</strong> do sentenciado. Os e-mails sem identificação serão ignorados e excluídos.</p>
-        </section>        
+        <section class="aviso-documentacao">
+          <h3>Atenção: cadastro no Rol de Visitas</h3>
+          <p>O envio de documentos para inclusão ou renovação no Rol de Visitas deve ser feito exclusivamente pelo portal oficial ConectaPP. <a href="documentacao.html">Veja como acessar a plataforma</a>.</p>
+        </section>
         <p>Alteração sobre o Envio de PIX. <a href="pix.html">Clique aqui</a> para visualizar</p>
-        <p style="background-color: rgb(231, 137, 137);">Informações sobre o envio de documentos para o Rol de Visitas via E-mail. <a href="documentacao.html">Clique Aqui</a> para visualizar.</p>
         <p>Alterações sobre o calendário de visitação e do jumbo. <a href="orientacao.html">Clique aqui para visualizar</a></p>
         <section><img src="imagens/informativo_jumbo.jpg" alt="Informações sobre o Jumbo"></section>
       </section>
     </main>
+    <script src="js/header.js"></script>
+    <script src="js/menu.js"></script>
 </body>
-<script src="js/script.js"></script>
 </html>
